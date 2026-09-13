@@ -175,11 +175,14 @@ async function VillasPageContent({
                   <p className="text-sm text-emerald-600 mb-4">
                     Tim kami akan membantu Anda menemukan villa yang sempurna sesuai kebutuhan.
                   </p>
-                  <Button 
-                    className="bg-emerald-600 hover:bg-emerald-700"
-                    onClick={() => window.open('https://wa.me/6281216919381?text=Halo%20Admin,%20saya%20ingin%20bertanya%20tentang%20villa%20di%20VillaBatuMurah.ID', '_blank')}
-                  >
-                    Chat dengan Admin
+                  <Button asChild className="bg-emerald-600 hover:bg-emerald-700">
+                    <a
+                      href="https://wa.me/6281216919381?text=Halo%20Admin,%20saya%20ingin%20bertanya%20tentang%20villa%20di%20VillaBatuMurah.ID"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Chat dengan Admin
+                    </a>
                   </Button>
                 </div>
               </div>
